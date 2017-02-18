@@ -6,6 +6,7 @@ Created on 18/02/2017
 
 import random
 
+'''Retorna el valor de una carta entregada'''
 def valorCarta(carta, acumulado):
     if(carta[0]=="J" or carta[0]=="Q" or carta[0]=="K"):
         return 10
@@ -15,7 +16,8 @@ def valorCarta(carta, acumulado):
         return 11
     else:
         return carta[0]
-    
+
+'''Retorna el valor de una mano de cartas estilo 21'''
 def contarMano(listaDeCartas, acumulado):
     if len(listaDeCartas)==1:
         return valorCarta(listaDeCartas[0], acumulado)
