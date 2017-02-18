@@ -1,7 +1,7 @@
 '''
 Created on 18/02/2017
 
-@author: Grabriela Ladino, Brian Rodriguez, Cristian Bernal
+@author: Grabriela Ladino 20151020073, Brian Rodriguez 20151020600, Cristian Bernal 20151020523
 '''
 
 '''Retorna el numero base elevado a la potencia indicada.'''
