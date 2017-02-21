@@ -26,23 +26,23 @@ def contarMano(listaDeCartas, acumulado):
     
 palos = ["Diamantes", "Picas", "Treboles", "Corazones"]
 numeros = [2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K", "A"]
-opcion = 1
+opcion = "1"
 mano = []
 valorMano = 0;
 
-while(opcion==1):
+while(opcion=="1"):
     carta = [numeros[random.randint(0,11)],palos[random.randint(0,3)]]
     mano.append(carta)
     valorMano = contarMano(mano, 0)
-    print "Su carta es " + str(carta)
+    print ("Su carta es " + str(carta))
     if(valorMano < 21):
         opcion = input("Desea otra carta? 1=Si, 2=No: ")
     else:
-        opcion = 2
+        opcion = "2"
 
 if(valorMano==21):
-    print "21 blackjack"
+    print ("21 blackjack")
 elif(valorMano < 21):
-    print "Su mano ha sumado " + str(valorMano) 
+    print ("Su mano ha sumado " + str(valorMano)) 
 else:
-    print "Fuera de rango. Lo sentimos"
+    print ("Fuera de rango. Lo sentimos")
